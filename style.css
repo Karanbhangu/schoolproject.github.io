@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #fcf8ec;
+    overflow-x: hidden;
+}
+nav{
+    background: #222831;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+}
+.uppernav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 4px;
+    height: 10%;
+}
+.uppernav h2 a{
+    text-decoration: none;
+    color: #dddddd;
+}
+.uppernav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+.uppernav li a{
+    color: #dddddd;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.1s;
+}
+.uppernav li a:hover{
+    background-color: #dddddd;
+    color: #222831;
+}
+.lowerhalf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+.left{
+    position: relative;
+    width: 60%;
+}
+.left h1{
+    position: relative;
+    left: 25%;
+    color: #dddddd;
+}
+.left h3{
+    position: relative;
+    color: #f05454;
+    left: 25%;
+}
+.left h2{
+    position: relative;
+    color: #dddddd;
+    left: 25%;
+}
+.right{
+    width: 40%;
+}
+.right img{
+    width: 300px;
+    height: 300px;
+}
+.home{
+    margin-top: 2%;
+}
+.home h1{
+    text-align: center;
+    color: #222831;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+}
+.cards{
+    position: relative;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #00303f;
+    width: 30%;
+    height: 30%;
+    margin: 0px 5px;
+    padding: 5px;
+    box-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, .9),
+                -0.5px -0.5px 0px rgba(0, 0, 0, .9),
+                1px 1px 0px rgba(0, 0, 0, .5);
+    transition: all 0.7s;
+}
+.card:hover{
+    position: relative;
+    bottom: 2px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, .9),
+                2px 2px 0px #393e46;
+}
+.up img{
+    width: 170px;
+    height: 170px;
+}
+.up{
+    height: 50%;
+}
+.down{
+    height: 50%;
+}
+.about{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h1{
+    color: #222831;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.me{
+    margin-top: 8px;
+    width: 90%;
+    height: 200px;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.me h3{
+    text-align: center;
+}
+.contact{
+    background: #222831;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.contact h2{
+    color: #dddddd;
+    font-size: 33px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+form{
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5),
+                0px 0px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputs{
+    background: rgba(255, 255, 255, 0.09);
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    height: 20px;
+}
+.inputs:focus{
+    outline: none;
+}
+.inputs::placeholder{
+    color: #dddddd;
+    font-family: 'Poppins', sans-serif;
+}
+#text{
+    height: 100px;
+    padding: 5px;
+}
+button{
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.09);
+    color: #dddddd;
+    border:none;
+    border-radius: 10px;
+}
+button:hover{
+    background: rgba(0, 0, 0, .1);
+}
+button:focus{
+    outline: none;
+}
+footer{
+    background: #222831;
+    color: #dddddd;
+    text-align: center;
+}
+@media only screen and (max-width:1035px){
+    .cards{
+        margin: 5px;
+        width: 100%;
+    }
+    .card{
+        width: 25%;
+        height: 25%;
+    } 
+}
+@media only screen and (max-width:900px){
+    .uppernav{
+        justify-content: space-around;
+    }
+    .uppernav ul{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:745px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 400px;
+        height: 350px;
+        margin: 5px 0px;
+        padding: 10px;
+    }
+    .up{
+        height: 60%;
+    }
+    .down{
+        height: 40%;
+    }
+    .left h1, .left h2, .left h3{
+        left: 10%;
+    }
+    .right img{
+        width: 270px;
+        height: 270px;
+        position: relative;
+        right: 5%;
+    }
+}
+@media only screen and (max-width:668px){
+    .lowerhalf{
+        flex-direction:column-reverse;
+    }
+    .right img{
+        width: 300px;
+        height: 300px;
+        right: 0%;
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .left{
+        margin-top: 40px;
+    }
+    .me{
+        width: 99%;
+        height: 350px;
+    }
+    .uppernav{
+        flex-direction: column;
+    }
+}
+@media (max-width:400px){
+    .card{
+        width: 90%;
+    }
+}
